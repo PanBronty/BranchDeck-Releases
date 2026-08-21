@@ -53,8 +53,8 @@ Every executable has a matching `.sha256` file in the Release assets. Verify a d
 PowerShell before running it:
 
 ```powershell
-Get-FileHash .\BranchDeck-0.9.4-setup.exe -Algorithm SHA256
-Get-Content .\BranchDeck-0.9.4-setup.exe.sha256
+Get-FileHash .\BranchDeck-0.9.5-setup.exe -Algorithm SHA256
+Get-Content .\BranchDeck-0.9.5-setup.exe.sha256
 ```
 
 The two hashes should match.
@@ -68,9 +68,9 @@ The two hashes should match.
 
 Installed builds check the public feed quietly on startup and announce only a newer version.
 Nothing downloads until you approve it, and a current version or temporary network failure stays
-silent. The notice opens **Settings › Updates**, where checking, downloading, progress, and the
-explicit **Restart and install** action stay together. Portable builds are updated by downloading
-and replacing the executable.
+silent. The notice opens the update controls at the end of **Settings › General**, where checking,
+downloading, progress, and the explicit **Restart and install** action stay together. Portable builds
+are updated by downloading and replacing the executable.
 
 ## Evaluation release
 
