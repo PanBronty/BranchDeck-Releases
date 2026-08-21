@@ -1,0 +1,78 @@
+BranchDeck — Evaluation End User Licence Agreement
+Copyright © 2026 Pavel Kocian. All rights reserved.
+
+Installing or running BranchDeck means accepting the terms below.
+
+1. EVALUATION GRANT
+
+   The copyright holder grants each person who obtains BranchDeck from an official
+   distribution channel a personal, non-exclusive, non-transferable, revocable licence
+   to install and use the application on devices they control solely to evaluate and test
+   it. No fee is charged for the evaluation licence.
+
+   This agreement does not grant a licence for resale, redistribution, sublicensing, or
+   continued production use. A separate licence may be offered in the future, but the
+   copyright holder is not obliged to offer one.
+
+2. OFFICIAL DISTRIBUTION
+
+   Official builds are published by Pavel Kocian through the BranchDeck GitHub Releases
+   page. Recipients may link other people to that page, but may not mirror, forward,
+   publish, sell, sublicense, rent, lend, or otherwise redistribute the application or
+   any part of it in source or binary form.
+
+3. RESTRICTIONS
+
+   The recipient may not:
+
+   - reverse engineer, decompile, or disassemble the application, except where that right
+     cannot be excluded by applicable law;
+   - create or distribute derivative works;
+   - remove or alter this notice or any authorship attribution;
+   - use the application to provide a hosted or managed service to third parties.
+
+4. EVALUATION SOFTWARE
+
+   BranchDeck is evaluation software. Features, file formats, update availability, and
+   distribution may change or end without notice. The recipient is responsible for deciding
+   whether the application is suitable for their repositories and workflow.
+
+5. NO WARRANTY
+
+   THE APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+   BranchDeck runs Git commands against the recipient's own repositories. Some of those
+   commands rewrite history or discard uncommitted work. The recipient is responsible for
+   their own backups and for the operations they confirm.
+
+6. LIMITATION OF LIABILITY
+
+   IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY — INCLUDING LOST WORK, LOST DATA, OR BUSINESS INTERRUPTION — WHETHER IN
+   AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+   WITH THE APPLICATION OR ITS USE.
+
+7. THIRD-PARTY COMPONENTS
+
+   BranchDeck bundles third-party software under its own licence terms. Nothing in this
+   agreement restricts any right granted by those licences, and this agreement does not
+   apply to them.
+
+   Git itself is not bundled. It is installed separately by the recipient under its own
+   licence.
+
+8. TERMINATION
+
+   This licence ends automatically if its terms are breached. The copyright holder may
+   also withdraw the evaluation licence or discontinue evaluation distribution, after
+   which the recipient must stop using the application and delete their copies. Nothing
+   in this clause affects repositories or commits created while using BranchDeck; those
+   are ordinary Git data and belong to the recipient.
+
+9. GOVERNING LAW
+
+   This agreement is governed by the laws of the Czech Republic.
+
+Questions about these terms: Pavel Kocian <pavel.p.kocian@gmail.com>.
