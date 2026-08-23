@@ -171,22 +171,15 @@ installer, so once the file is there the feature works offline. Leave it off and
 
 </details>
 
-<details>
-<summary><strong>Where is the source code?</strong></summary>
-
-<br>
-
-In a separate private repository. This one is only the download page — GitHub's automatically generated source
-archives here contain this page, the licence, and the images, not the application.
-
-</details>
-
 <br>
 
 ## Evaluation release
 
 BranchDeck is distributed under a free [evaluation licence](./LICENSE). Use the official GitHub release to
 evaluate it, and point other evaluators here rather than forwarding the executable.
+
+The application source is maintained in a separate private repository. The **Source code (zip)** archives GitHub
+attaches to every release below contain only this download page, the licence, and the images.
 
 Found a bug? **Help → Copy diagnostics** inside the application, then email the result — with a note about what
 you were doing — to **[pavel.p.kocian@gmail.com](mailto:pavel.p.kocian@gmail.com)**. It carries version numbers
