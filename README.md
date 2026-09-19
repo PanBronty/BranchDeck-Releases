@@ -4,7 +4,7 @@
 
 # BranchDeck
 
-**A graph-first desktop Git client for Windows.**
+**A graph-first desktop Git client for Windows and Linux.**
 
 Review, stage, commit, branch, investigate, and recover —
 without ever losing sight of your history.
@@ -12,6 +12,7 @@ without ever losing sight of your history.
 <p>
   <a href="https://github.com/PanBronty/BranchDeck-Releases/releases/latest"><img alt="Download the latest release" src="https://img.shields.io/github/v/release/PanBronty/BranchDeck-Releases?display_name=release&style=for-the-badge&label=Download&color=43c9ed"></a>
   <img alt="Windows 10 and 11, x64" src="https://img.shields.io/badge/Windows-10%20%7C%2011%20x64-36318f?style=for-the-badge&logo=windows11&logoColor=white">
+  <img alt="Linux x64, AppImage and deb" src="https://img.shields.io/badge/Linux-AppImage%20%7C%20deb%20x64-36318f?style=for-the-badge&logo=linux&logoColor=white">
   <img alt="Free evaluation licence" src="https://img.shields.io/badge/Licence-Evaluation-6f62d9?style=for-the-badge">
 </p>
 
@@ -29,11 +30,17 @@ Grab a build from the **[latest release](https://github.com/PanBronty/BranchDeck
 
 | | Build | Best for | How it works |
 | :-: | --- | --- | --- |
-| 📦 | **`BranchDeck-…-setup.exe`** | Most people | Guided install into a folder you choose, Start menu shortcut, clean uninstall, and in-app updates on demand. |
+| 📦 | **`BranchDeck-…-setup.exe`** | Most people on Windows | Guided install into a folder you choose, Start menu shortcut, clean uninstall, and in-app updates on demand. |
 | 🎒 | **`BranchDeck-…-portable.exe`** | Trying it without installing | One executable, run it from anywhere. Replace it by hand when a newer version appears. |
+| 🐧 | **`BranchDeck-….AppImage`** | Most people on Linux | `chmod +x` it and run it from anywhere, with the same in-app updates as the Windows installer. |
+| 📥 | **`BranchDeck-…-amd64.deb`** | Debian and Ubuntu | `sudo apt install ./BranchDeck-…-amd64.deb`. Your package manager owns it, so it installs the next version too. |
 
-**Requirements:** Windows 10 or 11 (x64) and [Git for Windows](https://git-scm.com/download/win) — BranchDeck
-drives your existing Git rather than shipping its own. No account and no administrator rights are needed.
+**Requirements:** Windows 10 or 11 (x64) or a 64-bit Linux desktop, and Git —
+[Git for Windows](https://git-scm.com/download/win), or your distribution's package. BranchDeck drives your
+existing Git rather than shipping its own. No account and no administrator rights are needed.
+
+On a Linux distribution that no longer ships FUSE 2, the AppImage needs `sudo apt install libfuse2` — or run
+it once with `--appimage-extract-and-run` if you would rather not install anything.
 
 <br>
 
@@ -110,7 +117,7 @@ Optional and off until you fetch the model — a one-time ~2.1 GB download, chec
 
 ## Verify your download
 
-Every executable ships with a matching `.sha256` file. Download both, then run this in PowerShell from the
+Every build ships with a matching `.sha256` file. Download both, then run this in PowerShell from the
 folder they landed in:
 
 ```powershell
@@ -119,6 +126,12 @@ Get-ChildItem BranchDeck-*.exe | ForEach-Object {
     $actual   = (Get-FileHash $_ -Algorithm SHA256).Hash
     if ($actual -eq $expected) { "OK        $($_.Name)" } else { "MISMATCH  $($_.Name)" }
 }
+```
+
+On Linux the `.sha256` file is in the format `sha256sum` already reads:
+
+```bash
+sha256sum -c BranchDeck-*.AppImage.sha256 BranchDeck-*.deb.sha256
 ```
 
 Every line should say `OK`. A `MISMATCH` means the download is damaged or was tampered with — fetch it again
@@ -137,7 +150,10 @@ Installed builds check this feed quietly at startup and speak up only when a new
 downloads until you approve it, and a current version or a network failure stays silent. The notice opens the
 update controls at the end of **Settings › General**, and your repositories and settings survive an update.
 
-Portable builds are updated by replacing the executable.
+Which copies update themselves follows from how you installed them: the Windows installer and the Linux
+AppImage do, because each is a single file BranchDeck can replace. A portable build is updated by replacing
+its executable, and a `.deb` by your package manager — both say so in the update controls rather than
+offering a button that cannot work.
 
 <br>
 
