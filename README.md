@@ -197,6 +197,11 @@ evaluate it, and point other evaluators here rather than forwarding the executab
 The application source is maintained in a separate private repository. The **Source code (zip)** archives GitHub
 attaches to every release below contain only this download page, the licence, and the images.
 
+BranchDeck is built on Electron, which includes Chromium and FFmpeg; FFmpeg is licensed under the
+LGPL-2.1-or-later. From 1.1.0 on, every release also carries `BranchDeck-<version>-third-party-sources.zip`
+with its manifest and `.sha256`: the corresponding source of Electron, Chromium, FFmpeg and llama.cpp, with
+patches and rebuild/replacement instructions. Take the one from the same release as your build.
+
 Found a bug? **Help → Copy diagnostics** inside the application, then email the result — with a note about what
-you were doing — to **[pavel.p.kocian@gmail.com](mailto:pavel.p.kocian@gmail.com)**. It carries version numbers
+you were doing — to **[support@branchdeck.dev](mailto:support@branchdeck.dev)**. It carries version numbers
 and recent crash kinds, but no tokens, account names, or repository paths.

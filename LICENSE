@@ -56,14 +56,43 @@ Installing or running BranchDeck means accepting the terms below.
 
 7. THIRD-PARTY COMPONENTS
 
-   BranchDeck bundles third-party software under its own licence terms. Nothing in this
-   agreement restricts any right granted by those licences, and this agreement does not
-   apply to them.
+   BranchDeck bundles third-party software under its own licence terms, listed in
+   resources/licenses/THIRD_PARTY_NOTICES.txt and resources/ai/THIRD_PARTY_NOTICES.txt
+   in an installed distribution, together with LICENSE.electron.txt and
+   LICENSES.chromium.html beside the application executable. Nothing in this agreement restricts any right granted by
+   those licences, and this agreement does not apply to them.
+
+   In particular, recipients may modify or replace LGPL-covered components and reverse
+   engineer the application to debug those modifications as permitted by the LGPL.
+   The corresponding sources, build instructions and replacement instructions are
+   described in resources/licenses/SOURCES.md. Evaluation restrictions, redistribution
+   restrictions and termination of this agreement do not restrict those third-party rights.
 
    Git itself is not bundled. It is installed separately by the recipient under its own
    licence.
 
-8. TERMINATION
+8. AI AGENTS AND OTHER CONNECTED SOFTWARE
+
+   BranchDeck can let AI agents and other software running on the recipient's own device
+   operate parts of its window through the Model Context Protocol. This is off until the
+   recipient switches it on, and can be switched off at any time in Settings. It does not
+   listen on any network port, and it accepts only requests carrying an access key that
+   BranchDeck stores in the recipient's own profile on that device.
+
+   Those agents are not part of BranchDeck. They are obtained, configured and used by the
+   recipient under their own terms, and BranchDeck neither provides them nor sends them
+   anything on its own initiative. The recipient is responsible for the agents they
+   connect and for everything those agents do, including changes they make to files and
+   repositories outside BranchDeck, and should review any commit message, styling or
+   other change an agent proposes before relying on it. Clause 5 and clause 6 apply to
+   this feature and to any custom styling in the same way as to the rest of the
+   application.
+
+   Names of other products appear in BranchDeck only to identify software it can work
+   with. BranchDeck is not affiliated with, sponsored by or endorsed by their owners, and
+   the names remain the trademarks of their respective owners.
+
+9. TERMINATION
 
    This licence ends automatically if its terms are breached. The copyright holder may
    also withdraw the evaluation licence or discontinue evaluation distribution, after
@@ -71,7 +100,7 @@ Installing or running BranchDeck means accepting the terms below.
    in this clause affects repositories or commits created while using BranchDeck; those
    are ordinary Git data and belong to the recipient.
 
-9. GOVERNING LAW
+10. GOVERNING LAW
 
    This agreement is governed by the laws of the Czech Republic.
 
