@@ -13,7 +13,7 @@ without ever losing sight of your history.
   <a href="https://github.com/PanBronty/BranchDeck-Releases/releases/latest"><img alt="Download the latest release" src="https://img.shields.io/github/v/release/PanBronty/BranchDeck-Releases?display_name=release&style=for-the-badge&label=Download&color=43c9ed"></a>
   <img alt="Windows 10 and 11, x64" src="https://img.shields.io/badge/Windows-10%20%7C%2011%20x64-36318f?style=for-the-badge&logo=windows11&logoColor=white">
   <img alt="Linux x64, AppImage and deb" src="https://img.shields.io/badge/Linux-AppImage%20%7C%20deb%20x64-36318f?style=for-the-badge&logo=linux&logoColor=white">
-  <img alt="Free evaluation licence" src="https://img.shields.io/badge/Licence-Evaluation-6f62d9?style=for-the-badge">
+  <img alt="Free for personal and business use" src="https://img.shields.io/badge/Licence-Free%20to%20use-6f62d9?style=for-the-badge">
 </p>
 
 </div>
@@ -121,7 +121,7 @@ Every build ships with a matching `.sha256` file. Download both, then run this i
 folder they landed in:
 
 ```powershell
-Get-ChildItem BranchDeck-*.exe | ForEach-Object {
+Get-ChildItem BranchDeck-1.1.1-*.exe | ForEach-Object {
     $expected = ((Get-Content "$($_.Name).sha256") -split ' ')[0]
     $actual   = (Get-FileHash $_ -Algorithm SHA256).Hash
     if ($actual -eq $expected) { "OK        $($_.Name)" } else { "MISMATCH  $($_.Name)" }
@@ -131,7 +131,7 @@ Get-ChildItem BranchDeck-*.exe | ForEach-Object {
 On Linux the `.sha256` file is in the format `sha256sum` already reads:
 
 ```bash
-sha256sum -c BranchDeck-*.AppImage.sha256 BranchDeck-*.deb.sha256
+sha256sum -c BranchDeck-1.1.1.AppImage.sha256 BranchDeck-1.1.1-amd64.deb.sha256
 ```
 
 Every line should say `OK`. A `MISMATCH` means the download is damaged or was tampered with — fetch it again
@@ -189,10 +189,11 @@ installer, so once the file is there the feature works offline. Leave it off and
 
 <br>
 
-## Evaluation release
+## Licence and support
 
-BranchDeck is distributed under a free [evaluation licence](./LICENSE). Use the official GitHub release to
-evaluate it, and point other evaluators here rather than forwarding the executable.
+Starting with 1.1.1, BranchDeck is free for personal and business use under its
+[end-user licence](./LICENSE). You can support development with an optional one-time or monthly
+contribution on [Ko-fi](https://ko-fi.com/branchdeck). Share this page when recommending BranchDeck.
 
 The application source is maintained in a separate private repository. The **Source code (zip)** archives GitHub
 attaches to every release below contain only this download page, the licence, and the images.

@@ -1,47 +1,52 @@
-BranchDeck — Evaluation End User Licence Agreement
+BranchDeck — End User Licence Agreement
 Copyright © 2026 Pavel Kocian. All rights reserved.
 
-Installing or running BranchDeck means accepting the terms below.
+These terms apply to copies of BranchDeck distributed under this agreement.
+By installing or using such a copy, you accept these terms.
 
-1. EVALUATION GRANT
+1. FREE LICENCE
 
-   The copyright holder grants each person who obtains BranchDeck from an official
-   distribution channel a personal, non-exclusive, non-transferable, revocable licence
-   to install and use the application on devices they control solely to evaluate and test
-   it. No fee is charged for the evaluation licence.
+   Pavel Kocian grants individuals and organisations who obtain BranchDeck from an
+   official distribution channel a worldwide, non-exclusive, royalty-free licence
+   to install and use it on devices they are authorised to use. This covers personal,
+   professional and business use, including production work and use by an organisation's
+   staff on its behalf. The licence has no fixed end date and is subject to clause 9.
 
-   This agreement does not grant a licence for resale, redistribution, sublicensing, or
-   continued production use. A separate licence may be offered in the future, but the
-   copyright holder is not obliged to offer one.
+   One-time and recurring contributions through Ko-fi are voluntary. A contribution
+   is not a licence fee and gives no additional licence rights, features, access to
+   updates or entitlement to support. Everyone may use the application under the
+   same terms regardless of whether they contribute.
 
 2. OFFICIAL DISTRIBUTION
 
    Official builds are published by Pavel Kocian through the BranchDeck GitHub Releases
-   page. Recipients may link other people to that page, but may not mirror, forward,
-   publish, sell, sublicense, rent, lend, or otherwise redistribute the application or
-   any part of it in source or binary form.
+   page. You may link to that page. You may also copy and deploy an official build
+   inside your organisation for the use covered by clause 1. Subject to clause 7
+   and rights under applicable law, you may not otherwise redistribute or sublicense
+   BranchDeck, including by resale, public mirroring or repackaging.
 
 3. RESTRICTIONS
 
-   The recipient may not:
+   Subject to clause 7 and rights under applicable law, the recipient may not:
 
-   - reverse engineer, decompile, or disassemble the application, except where that right
-     cannot be excluded by applicable law;
+   - reverse engineer, decompile, or disassemble the application;
    - create or distribute derivative works;
    - remove or alter this notice or any authorship attribution;
    - use the application to provide a hosted or managed service to third parties.
 
-4. EVALUATION SOFTWARE
+4. UPDATES AND SUPPORT
 
-   BranchDeck is evaluation software. Features, file formats, update availability, and
-   distribution may change or end without notice. The recipient is responsible for deciding
-   whether the application is suitable for their repositories and workflow.
+   The copyright holder may change or discontinue future versions, updates,
+   distribution or support, subject to applicable law. This does not end the licence
+   for copies already received under this agreement. The recipient is responsible for
+   deciding whether the application suits their repositories and workflow.
 
 5. NO WARRANTY
 
-   THE APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+   To the extent permitted by applicable law, the application is provided as is,
+   without additional promises about its performance, reliability or fitness for a
+   particular purpose. This agreement leaves mandatory statutory rights and remedies
+   intact.
 
    BranchDeck runs Git commands against the recipient's own repositories. Some of those
    commands rewrite history or discard uncommitted work. The recipient is responsible for
@@ -49,10 +54,12 @@ Installing or running BranchDeck means accepting the terms below.
 
 6. LIMITATION OF LIABILITY
 
-   IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
-   LIABILITY — INCLUDING LOST WORK, LOST DATA, OR BUSINESS INTERRUPTION — WHETHER IN
-   AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
-   WITH THE APPLICATION OR ITS USE.
+   To the extent permitted by applicable law, the copyright holder is not liable
+   for indirect or consequential losses arising from the use of the application.
+   This clause does not exclude or limit liability for intentional harm, gross
+   negligence, harm to a person's natural rights, or any other liability that
+   applicable law protects from exclusion or limitation. It does not restrict a
+   weaker party's mandatory right to compensation.
 
 7. THIRD-PARTY COMPONENTS
 
@@ -65,8 +72,8 @@ Installing or running BranchDeck means accepting the terms below.
    In particular, recipients may modify or replace LGPL-covered components and reverse
    engineer the application to debug those modifications as permitted by the LGPL.
    The corresponding sources, build instructions and replacement instructions are
-   described in resources/licenses/SOURCES.md. Evaluation restrictions, redistribution
-   restrictions and termination of this agreement do not restrict those third-party rights.
+   described in resources/licenses/SOURCES.md. The restrictions and termination terms
+   in this agreement do not restrict those third-party rights.
 
    Git itself is not bundled. It is installed separately by the recipient under its own
    licence.
@@ -94,14 +101,16 @@ Installing or running BranchDeck means accepting the terms below.
 
 9. TERMINATION
 
-   This licence ends automatically if its terms are breached. The copyright holder may
-   also withdraw the evaluation licence or discontinue evaluation distribution, after
-   which the recipient must stop using the application and delete their copies. Nothing
-   in this clause affects repositories or commits created while using BranchDeck; those
-   are ordinary Git data and belong to the recipient.
+   The copyright holder may terminate the licence by notice if the recipient materially
+   breaches these terms. If the breach can be remedied, the notice must give a
+   reasonable period to remedy it before termination takes effect. On termination the
+   recipient must stop using and remove their copies of BranchDeck, subject to clause 7
+   and applicable law. Termination does not affect the recipient's repositories,
+   commits or other Git data.
 
 10. GOVERNING LAW
 
-   This agreement is governed by the laws of the Czech Republic.
+   This agreement is governed by Czech law. If you are a consumer, this choice
+   preserves any mandatory protections under the law that would otherwise apply.
 
 Questions about these terms: Pavel Kocian <pavel.p.kocian@gmail.com>.
